@@ -30,11 +30,11 @@ if (isset($_POST['signup_btn'])) {
 			<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);        ?>">
 				<label for="chk" aria-hidden="true">Sign up</label>
 				<!-- the submit -->
-				<input type="text" name="frm[username]" placeholder="User name" required="">
-				<input type="email" name="frm[email]" placeholder="Email" required="">
-				<input type="password" name="frm[password]" placeholder="Password" required="">
-				<input type="password" name="frm[passwordConfirm]" placeholder="Password confirm" required="">
-				<input type="submit" value="Signup" name="signup_btn" />
+				<input type="text" id="name" name="name" placeholder="User name" required="">
+				<input type="email" id="email" name="email" placeholder="Email" required="">
+				<input type="password" id="password" name="password" placeholder="Password" required="">
+				<input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Password confirm" required="">
+				<input type="submit" id="name" value="Signup" name="signup_btn" />
 			</form>
 		</div>
 
