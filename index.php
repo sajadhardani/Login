@@ -3,7 +3,7 @@ include_once 'assets/controller/method.php';
 if (isset($_POST['signup_btn'])) {
 	// $username = $_POST['username'];
 	$data = $_POST['frm'];
-	userLogin($data);
+	signup($data);
 }
 
 
@@ -20,9 +20,11 @@ if (isset($_POST['signup_btn'])) {
 	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
+	 
 	<div class="main">
 		<input type="checkbox" id="chk" aria-hidden="true">
 
